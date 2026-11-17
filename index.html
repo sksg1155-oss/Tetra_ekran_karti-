@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetra Ana sayfası</title>
+</head>
+<body style="font-family: Arial, sans-serif; background:linear-gradient(45deg, #c93939, #4c14bb); overflow: auto;">
+    
+    <table align="center" style="margin-top: auto;">
+         <h1 align="center" style=" background:linear-gradient(45deg, #c93939, #4c14bb); background:linear-gradient(45deg, #c93939, #4c14bb);  color: aliceblue; opacity: 0.8;font-size: 50px;  width: 100%; height: 100px; ; align-content: center;margin: 0;padding: 0;box-sizing: border-box; font-family:'Times New Roman', Times, serif">TETRA</h1>
+        <tr>
+            
+            <td>
+                <form action="index.html"><button style="font-size: 16px; width: 200px; background:linear-gradient(45deg, #c98f39, #a714bb); color: white; padding: 14px 20px; border:2px solid black; cursor: pointer;border-radius: 35px;  ">Ana Sayfa</button></form>
+            </td>
+            <td>
+                <form action="tetra2.html"><button style="font-size: 16px; width: 200px; background:linear-gradient(45deg, #c98f39, #a714bb); color: white; padding: 14px 20px; border:2px solid black; cursor: pointer;border-radius: 35px;  ">Tetra</button></form>
+            </td>
+            <td>
+                <form action="tetra3.html"><button style="font-size: 16px; width: 200px; background:linear-gradient(45deg, #c98f39, #a714bb); color: white; padding: 14px 20px; border:2px solid black; cursor: pointer;border-radius: 35px;  ">Haberler</button></form>
+            </td>
+            <td>
+                <form action="kayit.html"><button style="font-size: 16px; width: 200px; background:linear-gradient(45deg, #c98f39, #a714bb); color: white; padding: 14px 20px; border:2px solid black; cursor: pointer;border-radius: 35px;  ">Kayıt Ol</button></form>
+            </td>
+            <td>
+                <form action="inceleme.html"><button style="font-size: 16px; width: 200px; background:linear-gradient(45deg, #c98f39, #a714bb); color: white; padding: 14px 20px; border:2px solid black; cursor: pointer;border-radius: 35px;  ">Inceleme</button></form>
+            </td>
+            <tr>
+            <td align="center" colspan="5">
+                <form action="satinal.html"><button style="background:linear-gradient(45deg, #185c21, #1c1b5c); border: 1px solid gold; border-radius: 20px; font-size: 20px; color: aliceblue; width: 170px; padding: 14px;" >$Satın al$</button></form>
+            </td>
+        </tr>
+        </tr>
+        
+        <tr align="center">
+            
+            <h1 style="color: aliceblue;">Yeni Ürünler</h1>
+            
+            <b style="color: aliceblue;">Yeni Tetra 1100 Ile Sınırlarınız Aşın Ve Gerçek Gücün Tadına Varın!</b>
+            <br>
+            <p style="color: aliceblue;">Yeni <u>Tetra 1000 </u>serisi çıkışını gerçekleştirdi. Yeni modelimizle birlikte daha fazla güç ve performans sunuyoruz.Eskiye kıyasla birçok avantaj ve alım gücü sağlıyor.
+            
+            </p>
+            <div style="text-align: center; width: 100%;">
+           <a href="inceleme.html"><img src="./resimler/tetra.png" alt="Tetra 1100" style="width: 400px;" border="3" ></a> 
+            </div>
+            <ul>
+                <li><h1>Yeni Tetra 1100'ün Özellikleri:</h1></li>
+                <li><b><a href="bilgiperforman.html" style="color: aliceblue;">Gelişmiş performans ve hız</a></b></li>
+                <hr style="border: 1px solid black;">
+                <li><b><a href="malzeme.html" style="color: aliceblue;">Yüksek kaliteli malzeme ve dayanıklılık</a></b></li>
+                <hr style="border: 1px solid black;">
+                <li><b><a href="guvenlik.html" style="color: aliceblue;">Gelişmiş güvenlik özellikleri</a></b></li>
+                <hr style="border: 1px solid black;">
+                <li><b><a href="baglanti.html" style="color: aliceblue;">Gelişmiş bağlantı ve entegrasyon seçenekleri</a></b></li>
+                <hr style="border: 1px solid black;">
+                <li><b><a href="oyun.html" style="color: aliceblue;">16 Gb Vram Gddr6 belleği ile kusursuz oyun deneyimi</a></b></li>
+                
+            </ul>
+        </tr>
+        <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0d0e15;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Fare Takip Eden Beyaz Işık Katmanı */
+    .cursor-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 450px;
+      height: 450px;
+      border-radius: 70%;
+      background: radial-gradient(
+        circle, 
+        rgba(255, 255, 255, 0.25) 0%, 
+        rgba(255, 255, 255, 0.08) 45%, 
+        rgba(255, 255, 255, 0) 70%
+      );
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      /* Yumuşak geçiş (smooth animation) efekti */
+      transition: transform 0.18s ease-out, opacity 0.3s ease;
+      z-index: 1;
+      will-change: transform;
+    }
+
+    /* İçerik Kutusu */
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: #a0a5b5;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Yumuşak Işık Halesi -->
+  <div class="cursor-glow" id="glow"></div>
+
+  <!-- Örnek İçerik -->
+  
+
+  <script>
+    const glow = document.getElementById('glow');
+    let mouseX = 0, mouseY = 0;
+    let glowX = 0, glowY = 0;
+
+    // Farenin anlık konumunu al
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    // Lerp (Linear Interpolation) ile ultra yumuşak takip animasyonu
+    function animate() {
+      // 0.1 değeri yumuşaklığı belirler (daha küçük = daha süzülen/akıcı hareket)
+      glowX += (mouseX - glowX) * 0.1;
+      glowY += (mouseY - glowY) * 0.1;
+
+      glow.style.transform = `translate(${glowX - 225}px, ${glowY - 225}px)`;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+         
+    </table>
+
+
+
+    
+</body>
+</html>

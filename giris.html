@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+</head>
+<body style="background:linear-gradient(45deg, #c93939, #4c14bb); color: aliceblue; font-family: Arial, sans-serif;overflow: auto; " >
+    
+    <table align="center">
+        <form action="index.html"><button style="background-color: #4c14bb; color: aqua; border-radius: 50px;" >Geri don</button></form>
+        <h1 style="text-align: center;">Giriş Yap</h1>
+        <hr style="border: 3px solid black;">
+        <tr>
+            <td><label for="ad1"><b>Ad:</b></label></td>    
+            <td><input type="text" id="ad1" name="ad1" required placeholder="Adınız girin"></td>
+        </tr>
+        <tr>
+            <td><label for="kullanici1"><b>Kullanıcı Adı:</b></label></td>
+            <td><input type="text" id="kullanici1" name="kullanici1" required placeholder="kullanıcı adınızı girin"></td>
+        </tr>
+        <tr>
+            <td><label for="email1"><b>Email:</b></label></td>
+            <td><input type="email" id="email1" name="email1" required placeholder="Email adresinizi girin"></td>
+        </tr>
+        <tr>
+            <td><label for="sifre1"><b>Şifre:</b></label></td>
+            <td><input type="password" id="sifre1" name="sifre1" required placeholder="Şifrenizi girin"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button onclick="giris()" type="button" style="font-size: 16px; width: 200px; background-color:chocolate; color: white; padding: 14px 20px; border:2px solid black; cursor: pointer;border-radius: 35px;" id="giris">Giriş Yap</button>
+            </td>
+        </tr>
+        <script>
+            function giris() {
+
+                var ad = document.getElementById("ad1").value;
+                var kullanici = document.getElementById("kullanici1").value;
+                var email = document.getElementById("email1").value;
+                var sifre = document.getElementById("sifre1").value;
+
+                var kayitliAd = localStorage.getItem("ad1");
+                var kayitliKullanici = localStorage.getItem("soyad1");
+                var kayitliEmail = localStorage.getItem("email1");
+                var kayitliSifre = localStorage.getItem("sifre1");
+
+                if (
+                    ad === kayitliAd &&
+                    kullanici === kayitliKullanici &&
+                    email === kayitliEmail &&
+                    sifre === kayitliSifre
+                ) {
+
+                    alert("Giriş başarılı! Ana sayfaya dönüyorsunuz.");
+
+                    window.location.href = "tetra.html";
+
+                } else {
+
+                    alert("Bilgiler hatalı! Tekrar deneyin.");
+
+                }
+            }
+</script>
+            
+
+<tr>
+    <td colspan="2" align="center">
+        <img src="./resimler/tetra.png" alt="Tetra Logo" style="width: 500px; height: auto; display: block; margin: 0 auto;">
+    </td>
+</tr>
+
+
+    </table>
+
+</body>
+</html>
